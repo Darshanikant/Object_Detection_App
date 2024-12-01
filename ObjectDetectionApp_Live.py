@@ -60,7 +60,7 @@ option = st.selectbox(
 model = YOLO("weights/yolov8n.pt")
 
 # Load class labels
-with open(r"C:\Users\sunil\DK\vs code\8. YOLO\utils\coco.txt", "r") as my_file:
+with open("coco.txt", "r") as my_file:
     class_list = my_file.read().split("\n")
 
 # Generate random colors for classes
